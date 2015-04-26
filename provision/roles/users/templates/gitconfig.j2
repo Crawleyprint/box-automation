@@ -1,11 +1,36 @@
 [user]
-    email = meka@lugons.org
-    name = Goran Mekić
+  name = Mladen Stepanic
+  email = crawleyprint@gmail.com
+
+[core]
+  editor = vim
+  excludesfile = /Users/localadmin/.gitignore_global
+
 [color]
-    ui = auto
-[github]
-    user = mekanix
-[alias]
-    wdiff = diff --word-diff=color
+  ui = auto
+
+[githubalias]
+  tree = log --graph --pretty=oneline --abrev-commit
+
 [push]
-    default = simple
+  default = matching
+
+[alias]
+  co = checkout
+  st = status -sb
+  difw = diff --word-diff
+  amend = commit --amend -C HEAD
+  ls = log --pretty=format:\"%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]\" --decorate --date=short
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "status"]
+  added = yellow
+  changed = red
+  untracked = cyan
+
+[difftool]
+  prompt = false

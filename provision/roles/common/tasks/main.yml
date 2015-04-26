@@ -98,15 +98,6 @@
   notify:
     - restart slim
 
-- name: configure chromium
-  sudo: yes
-  with_items: common_chromium_config
-  template:
-    src: "chromium/{{ item.name }}"
-    dest: "/etc/chromium.d/{{ item.name }}"
-    owner: root
-    group: root
-
 - name: download taskwarrior
   sudo: yes
   get_url:

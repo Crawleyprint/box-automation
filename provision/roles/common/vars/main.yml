@@ -6,25 +6,19 @@ common_packages:
   - name: arandr
   - name: ardour3
   - name: autoconf
-  - name: chromium
   - name: cmake
   - name: curl
   - name: dbus-x11
-  - name: elinks
   - name: evince
   - name: fakeroot
-  - name: firmware-iwlwifi
   - name: flashplugin-nonfree
   - name: geeqie
   - name: gimp
   - name: git-core
   - name: gpm
   - name: guitarix
-  - name: hplip
   - name: htop
   - name: i3
-  - name: iceweasel
-  - name: iceweasel-vimperator
   - name: inkscape
   - name: iptables
   - name: kernel-package
@@ -34,7 +28,6 @@ common_packages:
   - name: libgnutls28-dev
   - name: libncurses5-dev
   - name: libnotify-bin
-  - name: libreoffice
   - name: libpango1.0-dev
   - name: libxft-dev
   - name: libxinerama-dev
@@ -44,13 +37,9 @@ common_packages:
   - name: mpd
   - name: mplayer
   - name: mumble
-  - name: mutt-patched
-  - name: ncmpcpp
   - name: nmap
   - name: npm
-  - name: offlineimap
   - name: openntpd
-  - name: pepperflashplugin-nonfree
   - name: pkg-config
   - name: pulseaudio-module-jack
   - name: pv
@@ -70,7 +59,6 @@ common_packages:
   - name: sshpass
   - name: strace
   - name: suckless-tools
-  - name: synergy
   - name: syslog-ng-core
   - name: sysstat
   - name: smplayer
@@ -91,6 +79,7 @@ common_packages:
   - name: xinit
   - name: xserver-xorg
   - name: xul-ext-adblock-plus
+  - name: zsh
 
 pretask_packages:
   - name: python-apt
@@ -104,10 +93,4 @@ common_url_packages:
   - url: 'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb'
     name: google-chrome
     sha256sum: '0a1f0a1ff5b4472430b69f48ab77bf9f535a5a87074d15410ea017d796831544'
-  - url: 'http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_7.0/amd64/fish_2.1.1-1_amd64.deb'
-    name: fish
-    sha256sum: '35603c15a479940bea0dd1b89e7bf791181ce88f2a0eb017f2bbd253d3dc3e6c'
 
-common_chromium_config:
-  - name: incognito
-  - name: tor
