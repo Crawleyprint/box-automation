@@ -34,6 +34,7 @@ common_packages:
   - name: libxml2-dev
   - name: libxslt1-dev
   - name: liferea
+  - name: lxappearance
   - name: mpd
   - name: mplayer
   - name: mumble
