@@ -65,6 +65,7 @@ common_packages:
   - name: tcpdump
   - name: tmux
   - name: tor
+  - name: ttf-mscorefonts-installer
   - name: unclutter
   - name: unp
   - name: uuid-dev

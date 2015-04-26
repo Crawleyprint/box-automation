@@ -23,15 +23,6 @@
     extra_args: "--user"
     state: present
 
-- name: install user pip packages
-  with_items: user_pip_packages
-  sudo: yes
-  sudo_user: mladen
-  pip:
-    name: "{{ item.name }}"
-    virtualenv: "~/.virtualenvs/v"
-    state: present
-
 - name: download rofi
   sudo: yes
   sudo_user: mladen
